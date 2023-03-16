@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>10/10</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>GG EZ</h1>
+    <div>
+        <table>
+            <tr>
+                <th>OS</th>
+                <td>{{ system_info.system }}</td>
+            </tr>
+            <tr>
+                <th>Processeur</th>
+                <td>{{ system_info.processor }}</td>
+            </tr>
+            <tr>
+                <th>Nom de compte</th>
+                <td>{{ system_info.hostname }}</td>
+            </tr>
+            <tr>
+                <th>Address IP</th>
+                <td>{{ system_info.ip_address }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
